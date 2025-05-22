@@ -50,53 +50,54 @@
   --font-medium: 500;
 }
 
-/* -----------------------------------
-🔘 BUTTON STYLES
------------------------------------ */
+/* --------------
+🔘 BUTTONS (CSS)
+-------------- */
 
+/* General */
 .btn-primary,
-.btn-secondary {
-  padding: 14px 40px;
+.btn-secondary, 
+.btn-tertiary {
+  padding: 1rem 4.25rem;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease;
   text-decoration: none;
   font-size: var(--font-p3);
+  font-weight: 400;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+/* BTN-1: Primary */
 .btn-primary {
   background-color: var(--brand-blue);
   color: var(--brand-white);
 }
 
+.btn-primary:hover {
+  background-color: var(--hover-blue);
+}
+
+/* BTN-2: Secondary */
 .btn-secondary {
   background-color: var(--brand-white);
   color: var(--brand-blue);
 }
 
-.btn-primary:hover {
-  background-color: var(--brand-white);
-  color: var(--brand-blue);
-}
-
 .btn-secondary:hover {
-  background-color: var(--brand-blue);
-  color: var(--brand-white);
+  background-color: var(--hover-white);
 }
 
-/* Contact Us Button */
+/* BTN-3: Tertiary*/
 .btn-tertiary {
-  padding: 14px 10px;
-  text-decoration: none;
+  background-color: var(--brand-white);
+  border: 2px solid var(--brand-blue);
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: var(--font-p3);
 }
 
 .btn-tertiary:hover {
-  background-color: var(--brand-light-blue);
-  border: 2px;
-  border-color: var(--brand-blue);
-  border-radius: 50px;
+  background-color: var(--hover-white);
 }
 
