@@ -1,0 +1,25 @@
+/* ---------
+🔰 ADS BANNER
+---------- */
+
+.ads-banner {
+  background-image: url('../public/ad-1-tour.svg'); 
+  border-radius: 20px;
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+  margin: 40px;
+  overflow: hidden;
+}
+
+
+.ads-banner .overlay {
+  backdrop-filter: blur(2px); /* Optional for subtle effect */
+  
+}
+
+.ads-banner h2 {
+  font-size: 3.5rem;
+  font-weight: 100;
+  margin-bottom: 60px;
+}
