@@ -1,0 +1,102 @@
+/* -----------------------------------
+🎨 THEME VARIABLES (Manual CSS version)
+----------------------------------- */
+* {
+  margin:0;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Branding Colors */
+:root {
+  --brand-blue: #0056ff;
+  --brand-light-blue: #97baff;
+  --brand-red: #ff0000;
+  --brand-yellow: #ffd200;
+  --brand-white: #ffffff;
+  --brand-black: #000000;
+  --brand-gray: #f5f5f5;
+
+  /* Status Colors */
+  --success-bg: #34C759;
+  --success-subdued: #CFF8D8;
+  --danger-bg: #ff0000;
+  --danger-subdued: #FFD6D6;
+  --warning-bg: #ffd200;
+  --warning-subdued: #FFF5CC;
+  --inverted-bg: #ffffff;
+  --inverted-subdued: #f5f5f5;
+
+  /* Callout Text Colors */
+  --success-text: #0F8F2F;
+  --danger-text: #AA0000;
+  --warning-text: #856404;
+  --inverted-text: var(--brand-blue);
+
+  /* Typography Sizes */
+  --font-h1: 66px;
+  --font-h2: 56px;
+  --font-h3: 46px;
+  --font-h4: 36px;
+  --font-h5: 26px;
+  --font-h6: 22px;
+  --font-p1: 20px;
+  --font-p2: 18px;
+  --font-p3: 16px;
+
+  --font-regular: 400;
+  --font-medium: 500;
+}
+
+/* -----------------------------------
+🔘 BUTTON STYLES
+----------------------------------- */
+
+.btn-primary,
+.btn-secondary {
+  padding: 14px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-size: var(--font-p3);
+}
+
+.btn-primary {
+  background-color: var(--brand-blue);
+  color: var(--brand-white);
+}
+
+.btn-secondary {
+  background-color: var(--brand-white);
+  color: var(--brand-blue);
+}
+
+.btn-primary:hover {
+  background-color: var(--brand-white);
+  color: var(--brand-blue);
+}
+
+.btn-secondary:hover {
+  background-color: var(--brand-blue);
+  color: var(--brand-white);
+}
+
+/* Contact Us Button */
+.btn-tertiary {
+  padding: 14px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: var(--font-p3);
+}
+
+.btn-tertiary:hover {
+  background-color: var(--brand-light-blue);
+  border: 2px;
+  border-color: var(--brand-blue);
+  border-radius: 50px;
+}
+

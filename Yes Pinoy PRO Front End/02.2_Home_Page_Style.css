@@ -1,0 +1,149 @@
+.hero-section {
+  background: url('your-background-image.jpg') no-repeat center center / cover;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  color: var(--brand-white);
+  margin: 0px 40px 20px 40px;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  padding: 120px 80px;;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0px 40px 20px 40px;
+
+}
+
+.intro {
+  font-size: var(--font-p1);
+  margin-bottom: 15px;
+}
+
+.hero-title {
+  font-size: var(--font-h1);
+  color: var(--brand-yellow);
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: var(--font-p1);
+  margin-bottom: 30px;
+}
+
+
+
+/* Container accurately positioned as per layout */
+.hero-stats {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+  width: max-content;
+  padding: 80px;
+}
+
+/* General card styles */
+.card {
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.132);
+  width: 260px;
+}
+
+/* Customer card (top gray card) */
+.customer-card {
+  background-color: rgba(255, 255, 255, 0.262);
+  color: var(--brand-black);
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.avatars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px;
+}
+
+.avatars img,
+.avatars-more {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid var(--brand-white);
+  object-fit: cover;
+  margin-left: -10px;
+}
+
+.avatars-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--brand-white);
+  color: var(--brand-black);
+  font-weight: var(--font-medium);
+}
+
+.happy-customers {
+  color: var(--brand-blue);
+  font-size: var(--font-p1);
+  margin-bottom: 5px;
+}
+
+.reviews {
+  font-size: var(--font-p3);
+  color: var(--brand-blue);
+}
+
+.reviews .star {
+  color: var(--brand-yellow);
+}
+
+/* Bottom cards container */
+.bottom-cards {
+  display: flex;
+  gap: 15px;
+}
+
+/* Campaign card (blue card) */
+.campaign-card {
+  background-color: var(--brand-blue);
+  color: var(--brand-yellow);
+  padding: 20px 20px;
+}
+
+.campaign-card h3 {
+  font-size: var(--font-p1);
+  margin-bottom: 5px;
+}
+
+.campaign-card p {
+  font-size: var(--font-p3);
+}
+
+/* License card (yellow card) */
+.license-card {
+  background-color: var(--brand-yellow);
+  color: var(--brand-blue);
+  padding: 20px 20px;
+}
+
+.license-card h3 {
+  font-size: var(--font-p1);
+  margin-bottom: 5px;
+}
+
+.license-card p {
+  font-size: var(--font-p3);
+}

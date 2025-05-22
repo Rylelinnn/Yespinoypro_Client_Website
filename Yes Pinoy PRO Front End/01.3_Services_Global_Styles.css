@@ -1,0 +1,81 @@
+/* -----------------------------------
+🧠 Services Section Styling
+----------------------------------- */
+
+.services-section {
+  padding: 80px 40px;
+  background-color: var(--brand-white);
+  text-align: center;
+  font-family: var(--font-family);
+}
+
+.services-section h5 {
+  font-size: var(--font-p3);
+  font-weight: var(--font-medium);
+  color: var(--brand-black);
+  margin-bottom: 10px;
+}
+
+.services-section h2 {
+  font-size: var(--font-h3);
+  color: var(--brand-blue);
+  font-weight: var(--font-medium);
+  margin-bottom: 15px;
+}
+
+.services-section p {
+  font-size: var(--font-p3);
+  color: var(--brand-black);
+  margin: 0 auto 40px;
+}
+
+
+/* Cards Container */
+.services-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 40px 0px;
+}
+
+/* Individual Card */
+.service-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  padding: 30px 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.service-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--brand-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.service-icon img {
+  width: 28px;
+  height: 28px;
+}
+
+.service-title {
+  font-size: var(--font-p2);
+  font-weight: var(--font-medium);
+  color: var(--brand-blue);
+}
+
+.service-desc {
+  font-size: var(--font-p3);
+  color: var(--brand-black);
+}
