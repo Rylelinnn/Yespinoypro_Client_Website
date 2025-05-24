@@ -69,8 +69,8 @@
 .btn-primary,
 .btn-secondary, 
 .btn-tertiary {
-  padding: 1rem 4.25rem;
-  border-radius: 50px;
+  padding: 16px 56px;
+  border-radius: 100px;
   cursor: pointer;
   transition: all 0.3s ease;
   text-decoration: none;
@@ -108,4 +108,33 @@
 
 .btn-tertiary:hover {
   background-color: var(--hover-white);
+}
+
+/* -----------------------------------
+📱 BUTTON RESPONSIVENESS (GLOBAL)
+----------------------------------- */
+
+/* Tablets */
+@media (max-width: 1000px) {
+  .btn-primary,
+  .btn-secondary,
+  .btn-tertiary {
+    font-size: var(--font-p3);
+  }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  .btn-primary,
+  .btn-secondary,
+  .btn-tertiary {
+    font-size: var(--font-p4);
+    width: 100%;
+    text-align: center;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
