@@ -1,20 +1,27 @@
 /* -----------------------------------
 🎨 THEME VARIABLES (Manual CSS version)
 ----------------------------------- */
+* {
+  margin:0;
+}
 
 * {
   font-family: 'Poppins', sans-serif;
-  margin: 0;
 }
+
+/* -----------------------------------
+🎨 THEME VARIABLES (Manual CSS version)
+----------------------------------- */
 
 /* Branding Colors */
 :root {
   --brand-blue: #0056ff;
+  --brand-light-blue: #E6EEFF;
   --brand-red: #ff0000;
   --brand-yellow: #ffd200;
   --brand-white: #ffffff;
   --brand-black: #000000;
-  --brand-gray: #f5f5f5;
+  --brand-gray: #c8c8c8;
 
   --hover-blue:#0343c2;
   --hover-white: #d8e9ff;
@@ -36,15 +43,17 @@
   --inverted-text: var(--brand-blue);
 
   /* Typography Sizes */
-  --font-h1: 66px;
-  --font-h2: 56px;
-  --font-h3: 46px;
-  --font-h4: 36px;
-  --font-h5: 26px;
-  --font-h6: 22px;
+  --font-h1: 68px;
+  --font-h2: 58px;
+  --font-h3: 48px;
+  --font-h4: 38px;
+  --font-h5: 28px;
+  --font-h6: 24px;
   --font-p1: 20px;
   --font-p2: 18px;
   --font-p3: 16px;
+  --font-p4: 14px;
+
 
   --font-regular: 400;
   --font-medium: 500;
@@ -92,10 +101,9 @@
 /* BTN-3: Tertiary*/
 .btn-tertiary {
   background-color: var(--brand-white);
-  border: 2px solid var(--brand-blue);
+  border: 1.5px solid var(--brand-blue);
   cursor: pointer;
   transition: all 0.3s ease;
-  font-size: var(--font-p3);
 }
 
 .btn-tertiary:hover {
