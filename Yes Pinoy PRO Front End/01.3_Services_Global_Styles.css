@@ -3,7 +3,7 @@
 ----------------------------------- */
 
 .services-section {
-  padding: 40px 40px;
+  padding: 40px;
   background-color: var(--brand-white);
   text-align: center;
   font-family: var(--font-family);
@@ -13,29 +13,28 @@
   font-size: var(--font-p3);
   font-weight: var(--font-medium);
   color: var(--brand-black);
-  padding: 0px 0px 10px 0px;
+  padding: 0 0 10px 0;
 }
 
 .services-section h2 {
   font-size: var(--font-h2);
   color: var(--brand-blue);
   font-weight: var(--font-medium);
-  padding: 0px 0px 10px 0px;
+  padding: 0 0 10px 0;
 }
 
 .service-desc-1 {
   font-size: var(--font-p3);
   color: var(--brand-black);
-  padding: 0px 0px 40px 0px;
+  padding: 0 0 40px 0;
 }
-
 
 /* Cards Container */
 .services-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 25px;
-  padding: 40px 0px 40px 0px;
+  padding: 40px 0;
 }
 
 /* Individual Card */
@@ -43,7 +42,7 @@
   background-color: var(--brand-white);
   border-radius: 20px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
-  padding: 25px 25px;
+  padding: 25px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: left;
 }
@@ -57,11 +56,10 @@
   width: 68px;
   height: 68px;
   border-radius: 50%;
-  background-color: var(--brand-gray);
+  background-color: var(--brand-light-blue);
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--brand-light-blue);
 }
 
 .service-icon img {
@@ -73,12 +71,72 @@
   font-size: var(--font-p1);
   font-weight: var(--font-medium);
   color: var(--brand-blue);
-  padding: 10px 10px;
+  padding: 10px;
 }
 
 .service-desc-2 {
   font-size: var(--font-p3);
   color: var(--brand-black);
   padding: 0 10px;
-  
+}
+
+/* 📱 RESPONSIVE MEDIA QUERIES */
+
+/* -----------------------------------
+📱 Tablet (600px to 1200px)
+----------------------------------- */
+@media (max-width: 1200px) and (min-width: 600px) {
+  .services-section {
+    padding: 40px;
+  }
+
+  .services-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 40px 0;
+  }
+
+  .service-desc-1 {
+    padding: 0 0 40px 0;
+  }
+}
+
+/* -----------------------------------
+📱 Mobile (max-width: 599px)
+----------------------------------- */
+@media (max-width: 599px) {
+  .services-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 40px 0;
+  }
+
+  .service-card {
+    width: 100% !important;
+    padding: 20px 15px !important;
+    box-sizing: border-box;
+  }
+
+  .service-icon {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .service-icon img {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .service-title {
+    font-size: var(--font-p3) !important;
+  }
+
+  .service-desc-2 {
+    font-size: var(--font-p4) !important;
+  }
+
+  .service-desc-1 {
+    font-size: var(--font-p3) !important;
+    padding: 0 10px !important;
+  }
 }
