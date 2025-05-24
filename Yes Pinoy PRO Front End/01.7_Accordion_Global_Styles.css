@@ -1,0 +1,103 @@
+/* -----------------------------------
+❓ FAQ ACCORDION SECTION CSS
+----------------------------------- */
+
+.faq-container {
+  display: flex;
+  gap: 40px;
+  margin: 5rem 40px;
+  flex-direction: row;
+}
+
+@media (max-width: 1400px) {
+  .faq-container {
+    flex-direction: column;
+  }
+}
+
+.faq-container .faq-heading p {
+  margin-bottom: 4%;
+  font-size: var(--font-h5);
+}
+
+.faq-container .faq-heading h2 {
+  font-size: var(--font-h2);
+  color: var(--brand-blue);
+  margin: 0;
+  
+}
+.faq-container .faq-heading h2 span {
+  display: block;
+}
+.faq-container .accordion {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.faq-container .accordion .accordion-item {
+  background: var(--brand-white);
+  border: 1px solid var(--brand-gray);
+  border-radius: 12px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.03);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.faq-container .accordion .accordion-item.open .accordion-header {
+  color: var(--brand-blue);
+}
+.faq-container .accordion .accordion-item.open .accordion-content {
+  padding: 1rem 1.25rem;
+  max-height: 500px;
+}
+.faq-container .accordion .accordion-item.open .material-symbols-outlined {
+  transform: rotate(0deg);
+}
+.faq-container .accordion .accordion-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.faq-container .accordion .accordion-item .accordion-header {
+  padding: 1.5rem 1.25rem;
+  cursor: pointer;
+  font-size: var(--font-p1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.faq-container .accordion .accordion-item .accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease, padding 0.2s ease;
+  padding: 0 1.25rem;
+  font-size: var(--font-p1);
+  line-height: 2rem;
+}
+
+.faq-container .faq-heading hr {
+  margin-top: 2%;
+  max-width: 40%;
+  height: 4px; /* Thickness */
+  border: none; /* Remove default border */;
+  border-radius: 4px;
+  background-color: var(--brand-blue);
+}
+
+.faq-container .accordion .accordion-item .material-symbols-outlined {
+  transition: transform 0.3s ease;
+  font-size: var(--font-h4);
+  color: var(--brand-blue);
+  margin-left: 20px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 1,            /* 0 = outline, 1 = filled */
+    'wght' 200,          /* Weight: 100 to 700 */
+    'GRAD' 0,            /* Grade (contrast) */
+    'opsz' 48;           /* Optical size (matches font-size) */
+  color: var(--brand-blue);
+  transform: rotate(-90deg);
+}
