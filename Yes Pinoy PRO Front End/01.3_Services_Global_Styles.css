@@ -3,47 +3,47 @@
 ----------------------------------- */
 
 .services-section {
-  padding: 80px 40px;
+  padding: 40px 40px;
   background-color: var(--brand-white);
   text-align: center;
   font-family: var(--font-family);
 }
 
-.services-section h5 {
+.services-section h6 {
   font-size: var(--font-p3);
   font-weight: var(--font-medium);
   color: var(--brand-black);
-  margin-bottom: 10px;
+  padding: 0px 0px 10px 0px;
 }
 
 .services-section h2 {
-  font-size: var(--font-h3);
+  font-size: var(--font-h2);
   color: var(--brand-blue);
   font-weight: var(--font-medium);
-  margin-bottom: 15px;
+  padding: 0px 0px 10px 0px;
 }
 
-.services-section p {
+.service-desc-1 {
   font-size: var(--font-p3);
   color: var(--brand-black);
-  margin: 0 auto 40px;
+  padding: 0px 0px 40px 0px;
 }
 
 
 /* Cards Container */
 .services-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 25px;
-  padding: 40px 0px;
+  padding: 40px 0px 40px 0px;
 }
 
 /* Individual Card */
 .service-card {
-  background-color: #fff;
+  background-color: var(--brand-white);
   border-radius: 20px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
-  padding: 30px 30px;
+  padding: 25px 25px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: left;
 }
@@ -54,28 +54,31 @@
 }
 
 .service-icon {
-  width: 50px;
-  height: 50px;
+  width: 68px;
+  height: 68px;
   border-radius: 50%;
   background-color: var(--brand-gray);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  background-color: var(--brand-light-blue);
 }
 
 .service-icon img {
-  width: 28px;
-  height: 28px;
+  width: 38px;
+  height: 38px;
 }
 
 .service-title {
-  font-size: var(--font-p2);
+  font-size: var(--font-p1);
   font-weight: var(--font-medium);
   color: var(--brand-blue);
+  padding: 10px 10px;
 }
 
-.service-desc {
+.service-desc-2 {
   font-size: var(--font-p3);
   color: var(--brand-black);
+  padding: 0 10px;
+  
 }
