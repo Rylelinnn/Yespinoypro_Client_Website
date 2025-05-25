@@ -1,0 +1,38 @@
+/* Stats Section */
+.stats-section {
+    padding: none;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .stats-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .stats-track {
+    display: inline-flex;
+    animation: scroll 25s linear infinite;
+  }
+  
+  .stats-group {
+    display: inline-flex;
+    gap: 80px;
+    padding: 0 20px;
+  }
+  
+  .stat-item {
+    color: #0056FF;
+    font-size: var(--font-h2);
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
