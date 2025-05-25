@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>06_Marketing</title>
+    <link rel="stylesheet" href="01.1_Global_Styles.css">
+    <link rel="stylesheet" href="01.2_Header_Global_Styles_.css">
     <link rel="stylesheet" href="./06.6_Marketing_Style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -45,9 +47,12 @@
         <div class="container">
             <div class="logo">
                 <a href="/">
-                    <img src="./assets/img/logo.svg" alt="YES PINOY PRO Logo">
+                    <img src="./assets/logo.svg" alt="YES PINOY PRO Logo">
                 </a>
             </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
             <nav class="main-nav">
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -61,6 +66,7 @@
             </nav>
         </div>
     </header>
+    <div class="overlay"></div>
 
     <main>
         <!-- Marketing Hero Section -->
@@ -73,11 +79,11 @@
                         <p class="description">We help you engage, grow, and turn clients into sales. Whether you're looking to attract new customers, increase brand awareness, or boost revenue, our proven marketing strategies drive real results.</p>
                         <div class="cta-buttons">
                             <a href="#" class="btn btn-primary">Inquire Now</a>
-                            <a href="#" class="btn btn-outline">More Services</a>
+                            <a href="#" class="btn btn-secondary">More Services</a>
                         </div>
                     </div>
                     <div class="hero-image-container">
-                        <img src="./assets/img/header-image.svg" alt="Marketing illustration" class="hero-image">
+                        <img src="./assets/0.6_Marketing_Page_Assets/header-image.svg" alt="Marketing illustration" class="hero-image">
                     </div>
                 </div>
             </div>
@@ -119,7 +125,7 @@
                     <div class="services-left">
                         <h3 class="services-heading">We elevate your brands growth to success</h3>
                         <div class="services-image">
-                            <img src="./assets/img/marketing-services.svg" alt="Marketing professional using tablet with social media and digital marketing icons floating around">
+                            <img src="./assets/0.6_Marketing_Page_Assets/services.svg" alt="Marketing professional using tablet with social media and digital marketing icons floating around">
                         </div>
                         <p class="services-text">One stop for all your marketing solutions. Scale your brand with our digital & result driven marketing services. Ready to talk your brand to the next level?</p>
                         <a href="#" class="services-cta-btn">Join our Company Seminars to Know More</a>
@@ -182,13 +188,13 @@
             <div class="container">
                 <div class="hero-banner">
                     <div class="hero-background">
-                        <img src="./assets/img/snowboard-dude.png" alt="Snowboard Weeeee" class="background-image">
+                        <img src="./assets/0.6_Marketing_Page_Assets/snowboard-dude.png" alt="Snowboard Weeeee" class="background-image">
                         <div class="hero-overlay">
                             <h2 class="hero-title">Work With Yes Pinoy PRO</h2>
                             <div class="stats-container">
                                 <div class="stat-item">
                                     <div class="stat-icon">
-                                        <img src="./assets/img/star.svg" alt="Star icon">
+                                        <img src="./assets/0.6_Marketing_Page_Assets/star.svg" alt="Star icon">
                                     </div>
                                     <div class="stat-content">
                                         <div class="stat-number">100+</div>
@@ -197,7 +203,7 @@
                                 </div>
                                 <div class="stat-item">
                                     <div class="stat-icon">
-                                        <img src="./assets/img/badge.svg" alt="Badge icon">
+                                        <img src="./assets/0.6_Marketing_Page_Assets/badge.svg" alt="Badge icon">
                                     </div>
                                     <div class="stat-content">
                                         <div class="stat-number">20+</div>
@@ -206,7 +212,7 @@
                                 </div>
                                 <div class="stat-item">
                                     <div class="stat-icon">
-                                        <img src="./assets/img/project.svg" alt="Project icon">
+                                        <img src="./assets/0.6_Marketing_Page_Assets/project.svg" alt="Project icon">
                                     </div>
                                     <div class="stat-content">
                                         <div class="stat-number">10,000+</div>
@@ -231,7 +237,7 @@
                     <!-- Portfolio Item 1 - Ace Gen Institute -->
                     <div class="portfolio-item">
                         <div class="portfolio-image">
-                            <img src="./assets/img/ace-gen.png" alt="Ace Gen Institute - Advanced Generation Training Center">
+                            <img src="./assets/0.6_Marketing_Page_Assets/ace-gen.png" alt="Ace Gen Institute - Advanced Generation Training Center">
                             <div class="portfolio-overlay">
                                 <div class="portfolio-title-box-big">
                                     <h3 class="portfolio-title">Ace Gen - Institute</h3>
@@ -243,7 +249,7 @@
                     <!-- Portfolio Item 2 - Loren Social Campaign -->
                     <div class="portfolio-item">
                         <div class="portfolio-image">
-                            <img src="./assets/img/ypp-placeholder.png" alt="Loren Social Campaign - Travel and Experience Website">
+                            <img src="./assets/0.6_Marketing_Page_Assets/ypp-placeholder.png" alt="Loren Social Campaign - Travel and Experience Website">
                             <div class="portfolio-overlay">
                                 <div class="portfolio-title-box">
                                     <h3 class="portfolio-title">Loren Social Campaign</h3>
@@ -255,7 +261,7 @@
                     <!-- Portfolio Item 3 - Majestic Website -->
                     <div class="portfolio-item">
                         <div class="portfolio-image">
-                            <img src="./assets/img/ypp-placeholder.png" alt="Majestic Website Optimized - Travel Solutions Platform">
+                            <img src="./assets/0.6_Marketing_Page_Assets/ypp-placeholder.png" alt="Majestic Website Optimized - Travel Solutions Platform">
                             <div class="portfolio-overlay">
                                 <div class="portfolio-title-box">
                                     <h3 class="portfolio-title">Majestic Website Optimized</h3>
@@ -281,7 +287,7 @@
                         <!-- Blog Card 1 -->
                         <div class="blog-card">
                             <div class="blog-image">
-                                <img src="./assets/img/airport.png" alt="Airplane interior with blue lighting">
+                                <img src="./assets/0.6_Marketing_Page_Assets/airport.png" alt="Airplane interior with blue lighting">
                                 <div class="read-time">2 min read</div>
                             </div>
                             <div class="blog-content">
@@ -297,7 +303,7 @@
                         <!-- Blog Card 2 -->
                         <div class="blog-card">
                             <div class="blog-image">
-                                <img src="./assets/img/airport.png" alt="Airplane interior with blue lighting">
+                                <img src="./assets/0.6_Marketing_Page_Assets/airport.png" alt="Airplane interior with blue lighting">
                                 <div class="read-time">2 min read</div>
                             </div>
                             <div class="blog-content">
@@ -313,7 +319,7 @@
                         <!-- Blog Card 3 -->
                         <div class="blog-card">
                             <div class="blog-image">
-                                <img src="./assets/img/airport.png" alt="Airplane interior with blue lighting">
+                                <img src="./assets/0.6_Marketing_Page_Assets/airport.png" alt="Airplane interior with blue lighting">
                                 <div class="read-time">2 min read</div>
                             </div>
                             <div class="blog-content">
@@ -329,7 +335,7 @@
                         <!-- Blog Card 4 (Additional for carousel) -->
                         <div class="blog-card">
                             <div class="blog-image">
-                                <img src="./assets/img/airport.png" alt="Airplane interior with blue lighting">
+                                <img src="./assets/0.6_Marketing_Page_Assets/airport.png" alt="Airplane interior with blue lighting">
                                 <div class="read-time">2 min read</div>
                             </div>
                             <div class="blog-content">
@@ -345,7 +351,39 @@
                         <!-- Blog Card 5 (Additional for carousel) -->
                         <div class="blog-card">
                             <div class="blog-image">
-                                <img src="./assets/img/airport.png" alt="Airplane interior with blue lighting">
+                                <img src="./assets/0.6_Marketing_Page_Assets/airport.png" alt="Airplane interior with blue lighting">
+                                <div class="read-time">2 min read</div>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span class="blog-date">21 Jun 2024</span> | <span class="blog-author">By Andy Aluez</span>
+                                </div>
+                                <h3 class="blog-title">Avoid Offload at Philippines Immigration: Tips & Tricks</h3>
+                                <p class="blog-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Blog Card 6 (Additional for carousel) -->
+                        <div class="blog-card">
+                            <div class="blog-image">
+                                <img src="./assets/0.6_Marketing_Page_Assets/airport.png" alt="Airplane interior with blue lighting">
+                                <div class="read-time">2 min read</div>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <span class="blog-date">21 Jun 2024</span> | <span class="blog-author">By Andy Aluez</span>
+                                </div>
+                                <h3 class="blog-title">Avoid Offload at Philippines Immigration: Tips & Tricks</h3>
+                                <p class="blog-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor...</p>
+                                <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Blog Card 7 (Additional for carousel) -->
+                        <div class="blog-card">
+                            <div class="blog-image">
+                                <img src="./assets/0.6_Marketing_Page_Assets/airport.png" alt="Airplane interior with blue lighting">
                                 <div class="read-time">2 min read</div>
                             </div>
                             <div class="blog-content">
@@ -441,6 +479,6 @@
             </div>
         </div>
     </footer>
-    <script src="./06.6_Marketing_Javascript.js"></script>
+    <script src="./global.js"></script>
 </body>
 </html>
