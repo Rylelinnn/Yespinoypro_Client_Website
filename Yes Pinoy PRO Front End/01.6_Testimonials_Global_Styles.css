@@ -1,0 +1,192 @@
+
+.quote-icons {
+  position: relative;
+}
+
+.quote-icon {
+  position: absolute;
+  width: 50px;
+  height: auto;
+  opacity: 0.9;
+}
+
+.quote-left {
+  top: 50px;
+  left: 200px;
+}
+
+.quote-right {
+  bottom: -450px;
+  right: 100px;
+}
+
+.testimonials-section {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: var(--brand-white);
+  position: relative;
+}
+
+.testimonials-title {
+  color: var(--brand-blue);
+  font-size: var(--font-h2);
+  font-weight: var(--font-bold);
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.testimonials-title::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 120px;
+  background-color: var(--brand-blue);
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+.testimonials-subtext {
+  font-size: var(--font-p3);
+  color: var(--brand-black);
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.review-button {
+  background-color: var(--brand-blue);
+  color: var(--brand-white);
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
+  margin: 30px 0;
+  font-size: var(--font-p3);
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 82, 255, 0.3);
+}
+
+.review-button:hover {
+  background-color: var(--brand-blue);
+  transform: translateY(-2px);
+}
+
+.testimonial-slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 40px 0;
+  overflow: hidden;
+}
+
+.testimonial-slider-wrapper {
+  overflow: hidden;
+  width: 90%;
+  max-width: 1100px;
+}
+
+.testimonial-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-card {
+  background-color: var(--brand-white);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0 10px;
+  min-width: calc(100% / 3 - 20px);
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+.testimonial-card p {
+  font-size: var(--font-p3);
+  color: var(--brand-black);
+  font-weight: var(--font-bold); /* ✅ speech bold */
+  line-height: 1.6;
+}
+
+.stars {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: var(--brand-black);
+  color: var(--brand-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-bold); /* ✅ name bold */
+  margin-right: 10px;
+}
+
+.arrow {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: var(--brand-blue);
+  font-size: var(--font-h2);
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  padding: 0;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-arrow {
+  left: 28px;
+}
+
+.right-arrow {
+  right: 28px;
+  margin-top: 90px;
+}
+
+.dots-container {
+  margin-top: 20px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: var(--brand-yellow);
+}
