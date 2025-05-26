@@ -337,4 +337,47 @@
     <span class="dot"></span>
     <span class="dot"></span>
   </div>
-</section>
+</section
+
+
+  ---- JS TESTIMONIALS--
+
+const slider = document.querySelector(".testimonial-slider");
+const dots = document.querySelectorAll(".dot");
+const leftArrow = document.querySelector(".left-arrow");
+const rightArrow = document.querySelector(".right-arrow");
+
+const cardsPerPage = 3;
+const totalCards = document.querySelectorAll(".testimonial-card").length;
+const totalPages = Math.ceil(totalCards / cardsPerPage);
+
+let currentIndex = 0;
+
+function updateSlider() {
+  const offset = currentIndex * (100 / totalPages);
+  slider.style.transform = `translateX(-${offset}%)`;
+  dots.forEach(dot => dot.classList.remove("active"));
+  dots[currentIndex].classList.add("active");
+}
+
+rightArrow.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % totalPages;
+  updateSlider();
+});
+
+leftArrow.addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + totalPages) % totalPages;
+  updateSlider();
+});
+
+dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    currentIndex = index;
+    updateSlider();
+  });
+});
+
+// Init
+updateSlider();
+
+
