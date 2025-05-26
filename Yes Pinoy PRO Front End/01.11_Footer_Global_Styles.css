@@ -1,0 +1,97 @@
+.site-footer {
+    background: transparent;
+    padding: 32px 0 0 0;
+    font-family: "Poppins", sans-serif;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 120px;
+    flex-shrink: 0;
+  }
+  
+  .footer-container {
+    background: #FFD200;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 15px;
+    padding: 32px 64px 48px 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    border-bottom: none;
+  }
+  
+  .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    justify-content: left;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-col {
+    flex: 1 1 220px;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+  }
+  
+  .footer-col h4 {
+    color: #0056FF;
+    font-size: var(--font-p2);
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-col ul li {
+    margin-bottom: 16px;
+    font-size: var(--font-p3);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  
+  .footer-icon {
+    color: #0056FF;
+    margin-right: 8px;
+    font-size: var(--font-p3);
+  }
+  
+  .contact-list i {
+    color: #0056FF;
+    margin-right: 8px;
+  }
+  
+  .office-address h5 {
+    margin: 18px 0 6px 0;
+    font-size: var(--font-p3);
+    color: #0056FF;
+    font-weight: 600;
+  }
+  
+  .office-address p {
+    font-size: var(--font-p4);
+    margin: 0;
+  }
+  
+  .footer-newsletter, .newsletter-form, .newsletter-icon {
+    display: none !important;
+  }
