@@ -9,7 +9,7 @@
   flex-direction: row;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   .faq-container {
     flex-direction: column;
   }
