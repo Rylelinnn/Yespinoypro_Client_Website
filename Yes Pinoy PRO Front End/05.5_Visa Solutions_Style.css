@@ -1,7 +1,7 @@
 .section-travel {
   display: flex;
   flex-direction: column;
-  padding: 3rem 40px;
+  padding: 30px 40px;
   font-family: var(--font-family);
   
 }
@@ -15,7 +15,7 @@
   .section-travel {
     flex-direction: row;
     align-items: center;
-    padding: 40px;
+    padding: 12px 40px;
     
   }
 
@@ -75,7 +75,6 @@
   .section-travel .text-content {
     justify-content: center;
     text-align: center;
-    /* display: flex; */
   }
   
   .section-travel .text-content h1 {
