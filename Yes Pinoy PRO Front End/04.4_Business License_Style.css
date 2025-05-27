@@ -1,0 +1,201 @@
+.marketing-hero {
+    padding: 80px 0;
+    background-color: #fff;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+  }
+  
+  .marketing-hero .container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .marketing-hero .hero-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .marketing-hero .hero-text {
+    flex: 1;
+  }
+  
+  .marketing-hero .tagline {
+    font-size: var(--font-p4);
+    color: #555;
+    margin-bottom: 16px;
+    font-weight: var(--font-medium);
+  }
+  
+  .marketing-hero .headline {
+    font-size: var(--font-h3);
+    font-weight: 700;
+    color: var(--brand-blue);
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
+  
+  .marketing-hero .headline span {
+    display: block;
+  }
+  
+  .marketing-hero .description {
+    font-size: var(--font-p3);
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 32px;
+  }
+  
+  .marketing-hero .cta-buttons {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px; /* Added margin to separate buttons and companies SVG */
+  }
+  
+  .marketing-hero .btn {
+    padding: 1rem 4.25rem;
+    border-radius: 50px;
+    font-weight: var(--font-medium);
+    font-size: var(--font-p3);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+  
+  .marketing-hero .btn-primary {
+    background-color: var(--brand-blue);
+    color: var(--brand-white);
+    border: 2px solid var(--brand-blue);
+  }
+  
+  .marketing-hero .btn-primary:hover {
+    background-color: var(--hover-blue);
+    border-color: var(--hover-blue);
+  }
+  
+  .marketing-hero .btn-secondary {
+    background-color: transparent; /* Use btn-secondary for the 'More Services' button */
+    color: var(--brand-blue);
+    border: none; /* Add border for secondary button */
+  }
+  
+  .marketing-hero .btn-secondary:hover {
+    background-color: var(--hover-white); /* Hover style for secondary button */
+    color: var(--brand-blue);
+  }
+
+  /* Styles for the companies SVG placeholder */
+  .companies-svg-placeholder {
+    margin-top: 20px; /* Adjust spacing as needed */
+  }
+
+  .marketing-hero .hero-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .marketing-hero .hero-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+  }
+  
+/* Responsive adjustments for mobile */
+@media (max-width: 600px) {
+    .marketing-hero {
+        padding: 30px 0;
+      }
+      
+      .marketing-hero .container {
+        padding: 0 10px;
+      }
+      
+      .marketing-hero .hero-content {
+        flex-direction: column; /* Stack items vertically on small screens */
+        gap: 20px;
+      }
+      
+      .marketing-hero .headline {
+        font-size: var(--font-h5);
+        margin-bottom: 16px;
+        line-height: 1.1;
+      }
+      
+      .marketing-hero .description {
+        font-size: var(--font-p4);
+        margin-bottom: 20px;
+        line-height: 1.4;
+      }
+      
+      .marketing-hero .cta-buttons {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+      
+      .marketing-hero .btn {
+        padding: 0.75rem 2rem;
+        font-size: var(--font-p4);
+        width: 100%; /* Make buttons full width */
+        text-align: center;
+      }
+      
+      .companies-svg-placeholder {
+        margin-top: 15px; /* Adjust spacing for mobile */
+      }
+
+      .marketing-hero .hero-image-container {
+        max-width: 100%; /* Allow image container to take full width */
+        justify-content: center; /* Center the image */
+      }
+
+      .marketing-hero .hero-image {
+        width: 100%;
+        max-width: 300px; /* Limit image size on small screens */
+      }
+}
+
+/* Styles for the companies trusted section */
+.companies-trusted {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    gap: 20px; /* Adjust spacing between the SVG and text */
+    margin-top: 20px; /* Add some space above this section */
+}
+
+.companies-svg {
+    width: 200px; /* Set width based on placeholder */
+    height: 50px; /* Set height based on placeholder */
+    object-fit: contain; /* Ensure the SVG scales correctly */
+}
+
+.companies-text {
+    font-size: var(--font-p4); /* Adjust font size as needed */
+    color: #555; /* Match text color from original design */
+    line-height: 1.4; /* Adjust line height for readability */
+    margin: 0; /* Remove default paragraph margin */
+}
+
+/* Responsive adjustments for the companies trusted section on mobile */
+@media (max-width: 600px) {
+    .companies-trusted {
+        flex-direction: column; /* Stack SVG and text vertically on small screens */
+        align-items: flex-start; /* Align items to the start */
+        gap: 10px; /* Adjust spacing for mobile */
+        margin-top: 15px; /* Adjust top margin for mobile */
+    }
+
+    .companies-svg {
+        width: 150px; /* Adjust SVG width for smaller screens */
+        height: auto; /* Allow height to adjust automatically */
+    }
+
+    .companies-text {
+        text-align: center; /* Center text for stacked layout */
+        font-size: var(--font-p4); /* Keep font size consistent or adjust */
+    }
+}
