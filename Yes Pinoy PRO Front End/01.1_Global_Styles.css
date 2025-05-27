@@ -1,13 +1,8 @@
-/* -----------------------------------
-🎨 THEME VARIABLES (Manual CSS version)
------------------------------------ */
 * {
-  margin:0;
-}
-
-* {
+  margin: 0;
   font-family: 'Poppins', sans-serif;
 }
+
 
 /* -----------------------------------
 🎨 THEME VARIABLES (Manual CSS version)
@@ -23,7 +18,7 @@
   --brand-black: #000000;
   --brand-gray: #c8c8c8;
 
-  --hover-blue:#0343c2;
+  --hover-blue: #0343c2;
   --hover-white: #d8e9ff;
 
   /* Status Colors */
@@ -56,7 +51,8 @@
 
 
   --font-regular: 400;
-  --font-medium: 500;
+  --font-medium: 600;
+  --font-bold: 700;
 
   --font-family: 'Poppins', sans-serif;
 }
@@ -67,7 +63,7 @@
 
 /* General */
 .btn-primary,
-.btn-secondary, 
+.btn-secondary,
 .btn-tertiary {
   padding: 16px 56px;
   border-radius: 100px;
@@ -86,6 +82,7 @@
 
 .btn-primary:hover {
   background-color: var(--hover-blue);
+  transform: translateY(-2px);
 }
 
 /* BTN-2: Secondary */
@@ -96,6 +93,7 @@
 
 .btn-secondary:hover {
   background-color: var(--hover-white);
+  transform: translateY(-2px);
 }
 
 /* BTN-3: Tertiary*/
@@ -108,6 +106,7 @@
 
 .btn-tertiary:hover {
   background-color: var(--hover-white);
+  transform: translateY(-2px);
 }
 
 /* -----------------------------------
@@ -116,6 +115,7 @@
 
 /* Tablets */
 @media (max-width: 1000px) {
+
   .btn-primary,
   .btn-secondary,
   .btn-tertiary {
@@ -125,6 +125,7 @@
 
 /* Phones */
 @media (max-width: 600px) {
+
   .btn-primary,
   .btn-secondary,
   .btn-tertiary {
