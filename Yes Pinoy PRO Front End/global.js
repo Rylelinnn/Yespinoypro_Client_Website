@@ -90,7 +90,11 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     if (menuToggle && mainNav && overlay) {
-        menuToggle.addEventListener('click', toggleMenu);
+        menuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleMenu();
+        });
+        
         overlay.addEventListener('click', toggleMenu);
 
         // Close menu when clicking a link
@@ -105,7 +109,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Close menu on window resize if open
         window.addEventListener('resize', () => {
-            if (window.innerWidth > 480 && mainNav.classList.contains('active')) {
+            if (window.innerWidth > 768 && mainNav.classList.contains('active')) {
+                toggleMenu();
+            }
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (mainNav.classList.contains('active') && 
+                !mainNav.contains(e.target) && 
+                !menuToggle.contains(e.target)) {
                 toggleMenu();
             }
         });
